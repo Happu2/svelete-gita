@@ -12,6 +12,34 @@
 
 ---
 
+
+
+## 🎨 UI Comparison Screenshots
+
+### 🕉 Hero Section
+Original:
+![](src/assets/screenshots/page1original.png)
+Recreated:
+![](src/assets/screenshots/page1created.png)
+
+### 📚 Gita Chapters Grid
+Original:
+![](src/assets/screenshots/pagecardsoriginal.png)
+Recreated:
+![](src/assets/screenshots/pagecreated-3.png)
+
+### 📜 Verse Page
+Original:
+![](src/assets/screenshots/page2original.png)
+Recreated:
+![](src/assets/screenshots/page2created.png)
+
+### 🧘 Footer
+Original:
+![](src/assets/screenshots/page3original.png)
+Recreated:
+![](src/assets/screenshots/footercreated.png)
+
 ## ✨ Features
 
 - ✅ **Pixel-Perfect UI Recreation** - Faithfully recreated layout matching the original design

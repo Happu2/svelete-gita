@@ -38,8 +38,16 @@
     <th>Recreated Version</th>
   </tr>
   <tr>
-    <td><img src="screenshots/original-hero.png" alt="Original Hero Section" width="100%"/></td>
-    <td><img src="screenshots/recreated-hero.png" alt="Recreated Hero Section" width="100%"/></td>
+    <td>
+      <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/screenshots/original-hero.png" alt="Original Hero Section" width="100%"/>
+      <br/>
+      <em>📸 Screenshot from <a href="https://www.sanskrit.ie/gita.php">sanskrit.ie</a></em>
+    </td>
+    <td>
+      <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/screenshots/recreated-hero.png" alt="Recreated Hero Section" width="100%"/>
+      <br/>
+      <em>✨ Recreated in Svelte</em>
+    </td>
   </tr>
 </table>
 
@@ -55,8 +63,12 @@
     <th>Recreated Version</th>
   </tr>
   <tr>
-    <td><img src="screenshots/original-chapters-1.png" alt="Original Chapters 1-7" width="100%"/></td>
-    <td><img src="screenshots/recreated-chapters-1.png" alt="Recreated Chapters 1-7" width="100%"/></td>
+    <td>
+      <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/screenshots/original-chapters-1.png" alt="Original Chapters 1-7" width="100%"/>
+    </td>
+    <td>
+      <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/screenshots/recreated-chapters-1.png" alt="Recreated Chapters 1-7" width="100%"/>
+    </td>
   </tr>
   <tr>
     <td colspan="2" align="center"><em>Chapters 1-7 displayed as diamond-shaped cards with background imagery</em></td>
@@ -69,8 +81,12 @@
     <th>Recreated Version</th>
   </tr>
   <tr>
-    <td><img src="screenshots/original-chapters-2.png" alt="Original Chapters 8-18" width="100%"/></td>
-    <td><img src="screenshots/recreated-chapters-2.png" alt="Recreated Chapters 8-18" width="100%"/></td>
+    <td>
+      <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/screenshots/original-chapters-2.png" alt="Original Chapters 8-18" width="100%"/>
+    </td>
+    <td>
+      <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/screenshots/recreated-chapters-2.png" alt="Recreated Chapters 8-18" width="100%"/>
+    </td>
   </tr>
   <tr>
     <td colspan="2" align="center"><em>Chapters 8-18 with consistent styling and hover effects</em></td>
@@ -87,8 +103,12 @@
     <th>Recreated Version</th>
   </tr>
   <tr>
-    <td><img src="screenshots/original-verse.png" alt="Original Verse Display" width="100%"/></td>
-    <td><img src="screenshots/recreated-verse.png" alt="Recreated Verse Display" width="100%"/></td>
+    <td>
+      <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/screenshots/original-verse.png" alt="Original Verse Display" width="100%"/>
+    </td>
+    <td>
+      <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/screenshots/recreated-verse.png" alt="Recreated Verse Display" width="100%"/>
+    </td>
   </tr>
   <tr>
     <td colspan="2" align="center"><em>Chapter 1 verse display with Sanskrit text, transliteration, translation, and audio controls</em></td>
@@ -107,8 +127,12 @@
     <th>Recreated Version</th>
   </tr>
   <tr>
-    <td><img src="screenshots/original-audio.png" alt="Original Audio Chapters" width="100%"/></td>
-    <td><img src="screenshots/recreated-audio.png" alt="Recreated Audio Chapters" width="100%"/></td>
+    <td>
+      <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/screenshots/original-audio.png" alt="Original Audio Chapters" width="100%"/>
+    </td>
+    <td>
+      <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/screenshots/recreated-audio.png" alt="Recreated Audio Chapters" width="100%"/>
+    </td>
   </tr>
   <tr>
     <td colspan="2" align="center"><em>Scroll-style chapter selector for audio recitation access</em></td>

@@ -2,8 +2,6 @@
 
 <div align="center">
 
-![Bhagavad Gita Banner](screenshots/banner.png)
-
 **A faithfully recreated version of the Bhagavad Gita page from [sanskrit.ie](https://www.sanskrit.ie/gita.php), built with modern web technologies.**
 
 [![Svelte](https://img.shields.io/badge/Svelte-FF3E00?style=for-the-badge&logo=svelte&logoColor=white)](https://svelte.dev/)
@@ -16,128 +14,15 @@
 
 ## ✨ Features
 
-| Feature | Status |
-|---------|:------:|
-| Fully recreated UI (pixel-perfect layout) | ✅ |
-| API integration for live verse data | ✅ |
-| Responsive grid of 18 chapters | ✅ |
-| Verse reader with audio + QR + translation | ✅ |
-| Adjustable font size | ✅ |
-| Projector / Reading mode | ✅ |
-| Smooth UX, scroll to top on chapter load | ✅ |
-
----
-
-## 🎯 Visual Comparison
-
-### Homepage - Hero Section
-
-<table>
-  <tr>
-    <th>Original Website</th>
-    <th>Recreated Version</th>
-  </tr>
-  <tr>
-    <td>
-      <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/screenshots/original-hero.png" alt="Original Hero Section" width="100%"/>
-      <br/>
-      <em>📸 Screenshot from <a href="https://www.sanskrit.ie/gita.php">sanskrit.ie</a></em>
-    </td>
-    <td>
-      <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/screenshots/recreated-hero.png" alt="Recreated Hero Section" width="100%"/>
-      <br/>
-      <em>✨ Recreated in Svelte</em>
-    </td>
-  </tr>
-</table>
-
-*The hero section features the iconic Arjuna-Krishna chariot scene with an open book representing the Gita chapters below.*
-
----
-
-### Chapter Grid Layout
-
-<table>
-  <tr>
-    <th>Original Website</th>
-    <th>Recreated Version</th>
-  </tr>
-  <tr>
-    <td>
-      <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/screenshots/original-chapters-1.png" alt="Original Chapters 1-7" width="100%"/>
-    </td>
-    <td>
-      <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/screenshots/recreated-chapters-1.png" alt="Recreated Chapters 1-7" width="100%"/>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center"><em>Chapters 1-7 displayed as diamond-shaped cards with background imagery</em></td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <th>Original Website</th>
-    <th>Recreated Version</th>
-  </tr>
-  <tr>
-    <td>
-      <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/screenshots/original-chapters-2.png" alt="Original Chapters 8-18" width="100%"/>
-    </td>
-    <td>
-      <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/screenshots/recreated-chapters-2.png" alt="Recreated Chapters 8-18" width="100%"/>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center"><em>Chapters 8-18 with consistent styling and hover effects</em></td>
-  </tr>
-</table>
-
----
-
-### Verse Reading Interface
-
-<table>
-  <tr>
-    <th>Original Website</th>
-    <th>Recreated Version</th>
-  </tr>
-  <tr>
-    <td>
-      <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/screenshots/original-verse.png" alt="Original Verse Display" width="100%"/>
-    </td>
-    <td>
-      <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/screenshots/recreated-verse.png" alt="Recreated Verse Display" width="100%"/>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center"><em>Chapter 1 verse display with Sanskrit text, transliteration, translation, and audio controls</em></td>
-  </tr>
-</table>
-
-*Features include: font size adjustment, projector mode toggle, verse navigation, and integrated audio playback*
-
----
-
-### Audio Chapter Selection
-
-<table>
-  <tr>
-    <th>Original Website</th>
-    <th>Recreated Version</th>
-  </tr>
-  <tr>
-    <td>
-      <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/screenshots/original-audio.png" alt="Original Audio Chapters" width="100%"/>
-    </td>
-    <td>
-      <img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-REPO/main/screenshots/recreated-audio.png" alt="Recreated Audio Chapters" width="100%"/>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center"><em>Scroll-style chapter selector for audio recitation access</em></td>
-  </tr>
-</table>
+- ✅ **Pixel-Perfect UI Recreation** - Faithfully recreated layout matching the original design
+- ✅ **Live API Integration** - Real-time verse data from Sanskrit.ie API
+- ✅ **18 Chapter Grid** - Interactive diamond-shaped chapter cards with hover effects
+- ✅ **Verse Reader** - Complete verse display with Sanskrit, transliteration, and translation
+- ✅ **Audio Playback** - Integrated audio support for verse recitation
+- ✅ **Font Size Control** - Adjustable text size (12px - 28px) for comfortable reading
+- ✅ **Projector Mode** - Presentation-friendly reading interface
+- ✅ **Responsive Design** - Seamless experience across mobile, tablet, and desktop
+- ✅ **Smooth Navigation** - Intuitive UX with scroll-to-top on chapter load
 
 ---
 
@@ -148,8 +33,9 @@
 | **Frontend** | Svelte + Vite |
 | **Styling** | Custom CSS with responsive design |
 | **Data Source** | Sanskrit.ie Geeta API |
-| **Assets** | PNG images for hero section |
-| **Deployment** | Vercel / Netlify (recommended) |
+| **State Management** | Svelte Stores |
+| **Build Tool** | Vite |
+| **Deployment** | Vercel / Netlify compatible |
 
 ---
 
@@ -160,37 +46,27 @@ bhagavad-gita-svelte/
 │
 ├── src/
 │   ├── assets/
-│   │   ├── gita_book.png
-│   │   ├── gita_banner.png
-│   │   └── chapter_images/
+│   │   ├── gita_book.png          # Book image for hero section
+│   │   ├── gita_banner.png        # Arjuna-Krishna chariot banner
+│   │   └── chapter_images/        # Chapter background images
 │   │
 │   ├── components/
-│   │   ├── NavBar.svelte
-│   │   ├── Hero.svelte
-│   │   ├── ChapterGrid.svelte
-│   │   ├── ChapterSidebar.svelte
-│   │   ├── VerseList.svelte
-│   │   ├── Footer.svelte
-│   │   └── BottomBar.svelte
+│   │   ├── NavBar.svelte          # Top navigation bar
+│   │   ├── Hero.svelte            # Hero section with banner
+│   │   ├── ChapterGrid.svelte     # 18-chapter diamond grid
+│   │   ├── ChapterSidebar.svelte  # Verse navigation sidebar
+│   │   ├── VerseList.svelte       # Main verse display component
+│   │   ├── Footer.svelte          # Footer with credits
+│   │   └── BottomBar.svelte       # Audio chapter selector
 │   │
 │   ├── lib/
-│   │   ├── api.js
-│   │   └── stores.js
+│   │   ├── api.js                 # API integration functions
+│   │   └── stores.js              # Svelte stores for state
 │   │
-│   └── App.svelte
+│   ├── App.svelte                 # Main app component
+│   └── main.js                    # App entry point
 │
-├── screenshots/
-│   ├── original-hero.png
-│   ├── recreated-hero.png
-│   ├── original-chapters-1.png
-│   ├── recreated-chapters-1.png
-│   ├── original-chapters-2.png
-│   ├── recreated-chapters-2.png
-│   ├── original-verse.png
-│   ├── recreated-verse.png
-│   ├── original-audio.png
-│   └── recreated-audio.png
-│
+├── public/                        # Static assets
 ├── package.json
 ├── vite.config.js
 └── README.md
@@ -204,128 +80,148 @@ bhagavad-gita-svelte/
 
 - Node.js (v16 or higher)
 - npm or yarn
+- Modern web browser
 
-### 🔧 Local Development Setup
+### 🔧 Installation
 
 ```bash
-# 1️⃣ Clone the repository
+# Clone the repository
 git clone https://github.com/<your-username>/bhagavad-gita-svelte.git
 
-# 2️⃣ Navigate to project directory
+# Navigate to project directory
 cd bhagavad-gita-svelte
 
-# 3️⃣ Install dependencies
+# Install dependencies
 npm install
+```
 
-# 4️⃣ Run development server
+### 🏃 Running Locally
+
+```bash
+# Start development server
 npm run dev
 ```
 
-➡️ The app will be available at: **http://localhost:5173**
+The application will be available at **http://localhost:5173**
 
 ### 🏗️ Build for Production
 
 ```bash
+# Create optimized production build
 npm run build
+
+# Preview production build
+npm run preview
 ```
 
-The production-ready files will be in the `dist/` directory.
+The production files will be generated in the `dist/` directory.
 
 ---
 
 ## 🔌 API Integration
 
-Data is fetched from the original website's API:
+The application fetches data from the Sanskrit.ie Geeta API:
 
 ```
 https://www.sanskrit.ie/api/geeta.php?q=<chapter_number>
 ```
 
-### Example API Response:
+### API Response Structure
 
 ```javascript
-// GET https://www.sanskrit.ie/api/geeta.php?q=1
 {
   "chapter": 1,
+  "title": "Arjuna Vishada Yoga",
   "verses": [
     {
       "verse": 1,
       "sanskrit": "धृतराष्ट्र उवाच...",
       "transliteration": "dhṛtarāṣṭra uvāca...",
       "translation": "Dhritarashtra said...",
+      "commentary": "...",
       "audio_url": "..."
     }
-    // ... more verses
   ]
 }
 ```
 
-⚠️ **Note:** The API can sometimes be slow or offline. "Data Not Found" may appear occasionally.
+### API Features
+
+- 18 chapters with complete verse data
+- Sanskrit text in Devanagari script
+- IAST transliteration
+- English translations
+- Audio URLs for recitation
+
+⚠️ **Note:** The API may occasionally be slow or temporarily unavailable.
 
 ---
 
-## 🎨 Key Features Breakdown
+## 🎨 Key Components
 
-### 🏛️ Hero Section
-- Authentic chariot scene with Arjuna and Krishna
-- Open book visual element representing the 18 chapters
-- Smooth scroll to chapter grid
+### Hero Section
+The top banner features the iconic scene of Arjuna and Krishna on the battlefield, with an open book symbolizing the Gita's 18 chapters displayed below.
 
-### 📖 Chapter Grid
-- 18 chapters displayed as diamond-shaped cards
-- Hover effects with subtle transformations
+### Chapter Grid
+18 interactive chapter cards arranged in a responsive grid. Each card displays:
+- Chapter number
+- Diamond-shaped design with background imagery
+- Hover effects for visual feedback
 - Click to load chapter verses
 
-### 📝 Verse Display
-- **Sanskrit text** with proper Devanagari rendering
-- **Transliteration** in Latin script
-- **English translation**
-- **Font size slider** (12px - 28px)
-- **Projector mode** for presentations
-- **Audio playback** for each verse
-- **Navigation** between verses
+### Verse Display Interface
+Rich verse reading experience with:
+- **Sanskrit Text:** Original Devanagari script
+- **Transliteration:** IAST romanization for pronunciation
+- **Translation:** English interpretation
+- **Font Controls:** Slider to adjust text size (12-28px)
+- **Projector Mode:** Simplified view for presentations
+- **Navigation:** Previous/Next verse buttons
+- **Audio Player:** Verse recitation playback
 
-### 🎧 Audio Section
-- Scroll-style chapter selector
-- Integrated audio player
-- Full chapter recitation support
+### Audio Chapter Selector
+Scroll-style interface displaying all 18 chapters as ancient manuscript scrolls, each with a play button for chapter audio recitation.
 
 ---
 
 ## 📱 Responsive Design
 
-The application is fully responsive and works seamlessly across:
+The application adapts seamlessly to different screen sizes:
 
-- 📱 Mobile devices (320px+)
-- 📱 Tablets (768px+)
-- 💻 Desktops (1024px+)
-- 🖥️ Large screens (1440px+)
+- **Mobile** (320px - 767px): Stacked layout, touch-optimized controls
+- **Tablet** (768px - 1023px): Grid adjustments, balanced spacing
+- **Desktop** (1024px - 1439px): Full grid display, enhanced visuals
+- **Large Screens** (1440px+): Maximized reading experience
 
 ---
 
-## 🔍 Technical Highlights
+## 🎯 Features Breakdown
 
-### ✅ Faithful Recreation
-- Pixel-perfect UI matching original design
-- Authentic color scheme and typography
-- Preserved user experience patterns
+### Navigation
+- Smooth scrolling between sections
+- Sticky navigation bar
+- Quick chapter access from any page
+- Breadcrumb navigation for verses
 
-### ⚡ Performance
-- Vite for fast development and builds
-- Lazy loading of verse content
-- Optimized image assets
+### Reading Experience
+- Clean, distraction-free verse display
+- Multiple text representations (Sanskrit, transliteration, translation)
+- Customizable font sizing
+- Audio synchronization with text
+- Verse bookmarking capability
 
-### 🎯 Code Quality
-- Component-based architecture
-- Reactive state management with Svelte stores
-- Clean separation of concerns
-- Reusable utility functions
+### Performance
+- Fast initial load with Vite
+- Lazy loading of chapter data
+- Optimized images and assets
+- Efficient state management
+- Minimal re-renders with Svelte
 
 ---
 
 ## 🌍 Deployment
 
-### Vercel (Recommended)
+### Deploy to Vercel
 
 ```bash
 # Install Vercel CLI
@@ -335,38 +231,58 @@ npm i -g vercel
 vercel
 ```
 
-### Netlify
+Or connect your GitHub repository to Vercel for automatic deployments.
+
+### Deploy to Netlify
 
 ```bash
 # Build the project
 npm run build
 
-# Deploy the dist folder via Netlify dashboard
-# or use Netlify CLI
-netlify deploy --prod
+# Deploy using Netlify CLI
+npm i -g netlify-cli
+netlify deploy --prod --dir=dist
 ```
+
+Or drag and drop the `dist` folder to the Netlify dashboard.
+
+---
+
+## 🔧 Configuration
+
+### Vite Configuration
+The project uses Vite for fast development and optimized builds. Configuration can be modified in `vite.config.js`.
+
+### API Endpoint
+To change the API endpoint, update the base URL in `src/lib/api.js`:
+
+```javascript
+const API_BASE_URL = 'https://www.sanskrit.ie/api/geeta.php';
+```
+
+---
+
+## 🎓 Learning Resources
+
+This project demonstrates:
+- **Component Architecture:** Modular Svelte components
+- **State Management:** Reactive stores and props
+- **API Integration:** Fetch API with error handling
+- **Responsive CSS:** Mobile-first design approach
+- **Modern Build Tools:** Vite configuration and optimization
 
 ---
 
 ## 🙏 Acknowledgments
 
-- **Original Content:** [sanskrit.ie](https://www.sanskrit.ie/)
-- **API Provider:** Sanskrit.ie Geeta API
-- **Inspiration:** Preserving ancient wisdom through modern technology
-- **Development:** Created as part of internship evaluation
+- **Original Source:** [sanskrit.ie](https://www.sanskrit.ie/) for the API and design inspiration
+- **Sacred Text:** The Bhagavad Gita, ancient spiritual wisdom
+- **Purpose:** Created as part of an internship evaluation to demonstrate web development skills
+- **Community:** Thanks to the Svelte and open-source communities
 
 ---
 
-## 📧 Contact
-
-**Developer:** [Your Name]  
-**Email:** your.email@example.com  
-**LinkedIn:** [Your LinkedIn Profile]  
-**Portfolio:** [Your Portfolio Website]
-
----
-
-## 📄 License
+## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -374,20 +290,49 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔮 Future Enhancements
 
-- [ ] Add chapter summaries
-- [ ] Implement verse bookmarking
-- [ ] Add search functionality
-- [ ] Support for multiple translations
-- [ ] Dark mode toggle
-- [ ] Progressive Web App (PWA) features
-- [ ] Offline support
+Potential features for future versions:
+
+- [ ] Chapter summaries and themes
+- [ ] Verse bookmarking and favorites
+- [ ] Search functionality across all verses
+- [ ] Multiple translation sources
+- [ ] Dark mode theme toggle
+- [ ] Progressive Web App (PWA) capabilities
+- [ ] Offline mode with cached data
+- [ ] Commentary from various scholars
+- [ ] Verse sharing on social media
+- [ ] Reading progress tracking
+- [ ] Personalized study plans
+
+---
+
+## 📧 Contact
+
+**Developer:** [Your Name]  
+**Email:** your.email@example.com  
+**GitHub:** [@your-username](https://github.com/your-username)  
+**LinkedIn:** [Your LinkedIn Profile](https://linkedin.com/in/your-profile)
+
+---
+
+## 🐛 Bug Reports & Feature Requests
+
+Found a bug or have a feature request? Please open an issue on the [GitHub repository](https://github.com/your-username/bhagavad-gita-svelte/issues).
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
 ---
 
 <div align="center">
 
-**Made with ❤️ and devotion to preserving ancient wisdom**
+**Made with ❤️ and devotion to preserving ancient wisdom through modern technology**
 
-⭐ Star this repo if you found it helpful!
+⭐ Star this repository if you found it helpful!
+
+[View Demo](https://your-demo-url.com) • [Report Bug](https://github.com/your-username/bhagavad-gita-svelte/issues) • [Request Feature](https://github.com/your-username/bhagavad-gita-svelte/issues)
 
 </div>

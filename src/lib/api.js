@@ -1,4 +1,4 @@
-const BASE_URL = "/geeta-api";
+const BASE_URL = "https://www.sanskrit.ie/api/geeta.php";
 
 export async function getChapter(chapter) {
   const res = await fetch(`${BASE_URL}?q=${chapter}`);

@@ -12,6 +12,29 @@
 
 ---
 
+## Original Website
+![Original Screenshot](https://raw.githubusercontent.com/<username>/<repo>/main/assets/screenshots/page1original.png)
+
+## My Recreated Version
+![Created Screenshot](https://raw.githubusercontent.com/<username>/<repo>/main/assets/screenshots/page1created.png)
+
+
+## Original Website
+![Original Screenshot](https://raw.githubusercontent.com/<username>/<repo>/main/assets/screenshots/page2original.png)
+
+## My Recreated Version
+![Created Screenshot](https://raw.githubusercontent.com/<username>/<repo>/main/assets/screenshots/page2created.png)
+
+
+## Original Website
+![Original Screenshot](https://raw.githubusercontent.com/<username>/<repo>/main/assets/screenshots/page3original.png)
+
+## My Recreated Version
+![Created Screenshot](https://raw.githubusercontent.com/<username>/<repo>/main/assets/screenshots/pagecreated-3.png)
+
+
+
+
 ## ✨ Features
 
 - ✅ **Pixel-Perfect UI Recreation** - Faithfully recreated layout matching the original design

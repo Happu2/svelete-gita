@@ -12,13 +12,6 @@
 
 ---
 
-
-| <img src="https://raw.githubusercontent.com/<username>/<repo>/main/assets/screenshots/page1original.png" width="450" /> | <img src="https://raw.githubusercontent.com/<username>/<repo>/main/assets/screenshots/page1created.png" width="450" /> |
-
-
-
-
-
 ## ✨ Features
 
 - ✅ **Pixel-Perfect UI Recreation** - Faithfully recreated layout matching the original design
@@ -30,6 +23,68 @@
 - ✅ **Projector Mode** - Presentation-friendly reading interface
 - ✅ **Responsive Design** - Seamless experience across mobile, tablet, and desktop
 - ✅ **Smooth Navigation** - Intuitive UX with scroll-to-top on chapter load
+
+---
+
+## 📸 Application Screenshots
+
+### Page 1: Hero & Chapter Grid
+
+<table>
+  <tr>
+    <th width="50%">Original Website</th>
+    <th width="50%">Recreated Version</th>
+  </tr>
+  <tr>
+    <td><img src="screenshots/page1original.png" alt="Original Page 1" width="100%"/></td>
+    <td><img src="screenshots/page1created.png" alt="Recreated Page 1" width="100%"/></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <em>Hero section with Arjuna-Krishna banner and the beginning of the chapter grid</em>
+    </td>
+  </tr>
+</table>
+
+---
+
+### Page 2: Complete Chapter Grid
+
+<table>
+  <tr>
+    <th width="50%">Original Website</th>
+    <th width="50%">Recreated Version</th>
+  </tr>
+  <tr>
+    <td><img src="screenshots/page2original.png" alt="Original Page 2" width="100%"/></td>
+    <td><img src="screenshots/page2created.png" alt="Recreated Page 2" width="100%"/></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <em>Full view of all 18 chapters displayed as diamond-shaped interactive cards</em>
+    </td>
+  </tr>
+</table>
+
+---
+
+### Page 3: Verse Reading Interface
+
+<table>
+  <tr>
+    <th width="50%">Original Website</th>
+    <th width="50%">Recreated Version</th>
+  </tr>
+  <tr>
+    <td><img src="screenshots/page3original.png" alt="Original Page 3" width="100%"/></td>
+    <td><img src="screenshots/pagecreated-3.png" alt="Recreated Page 3" width="100%"/></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <em>Verse display with Sanskrit text, transliteration, translation, and audio controls</em>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -72,6 +127,14 @@ bhagavad-gita-svelte/
 │   │
 │   ├── App.svelte                 # Main app component
 │   └── main.js                    # App entry point
+│
+├── screenshots/                   # Application screenshots for README
+│   ├── page1original.png         # Original website - hero section
+│   ├── page1created.png          # Recreated - hero section
+│   ├── page2original.png         # Original website - chapter grid
+│   ├── page2created.png          # Recreated - chapter grid
+│   ├── page3original.png         # Original website - verse reader
+│   └── pagecreated-3.png         # Recreated - verse reader
 │
 ├── public/                        # Static assets
 ├── package.json
@@ -152,13 +215,14 @@ https://www.sanskrit.ie/api/geeta.php?q=<chapter_number>
 }
 ```
 
-### API Features
+### Example API Call
 
-- 18 chapters with complete verse data
-- Sanskrit text in Devanagari script
-- IAST transliteration
-- English translations
-- Audio URLs for recitation
+```javascript
+// Fetch Chapter 1
+const response = await fetch('https://www.sanskrit.ie/api/geeta.php?q=1');
+const data = await response.json();
+console.log(data.verses); // Array of verses
+```
 
 ⚠️ **Note:** The API may occasionally be slow or temporarily unavailable.
 
@@ -202,30 +266,6 @@ The application adapts seamlessly to different screen sizes:
 
 ---
 
-## 🎯 Features Breakdown
-
-### Navigation
-- Smooth scrolling between sections
-- Sticky navigation bar
-- Quick chapter access from any page
-- Breadcrumb navigation for verses
-
-### Reading Experience
-- Clean, distraction-free verse display
-- Multiple text representations (Sanskrit, transliteration, translation)
-- Customizable font sizing
-- Audio synchronization with text
-- Verse bookmarking capability
-
-### Performance
-- Fast initial load with Vite
-- Lazy loading of chapter data
-- Optimized images and assets
-- Efficient state management
-- Minimal re-renders with Svelte
-
----
-
 ## 🌍 Deployment
 
 ### Deploy to Vercel
@@ -255,28 +295,27 @@ Or drag and drop the `dist` folder to the Netlify dashboard.
 
 ---
 
-## 🔧 Configuration
+## 🎓 Features Breakdown
 
-### Vite Configuration
-The project uses Vite for fast development and optimized builds. Configuration can be modified in `vite.config.js`.
+### Navigation
+- Smooth scrolling between sections
+- Sticky navigation bar
+- Quick chapter access from any page
+- Breadcrumb navigation for verses
 
-### API Endpoint
-To change the API endpoint, update the base URL in `src/lib/api.js`:
+### Reading Experience
+- Clean, distraction-free verse display
+- Multiple text representations (Sanskrit, transliteration, translation)
+- Customizable font sizing
+- Audio synchronization with text
+- Verse-by-verse navigation
 
-```javascript
-const API_BASE_URL = 'https://www.sanskrit.ie/api/geeta.php';
-```
-
----
-
-## 🎓 Learning Resources
-
-This project demonstrates:
-- **Component Architecture:** Modular Svelte components
-- **State Management:** Reactive stores and props
-- **API Integration:** Fetch API with error handling
-- **Responsive CSS:** Mobile-first design approach
-- **Modern Build Tools:** Vite configuration and optimization
+### Performance
+- Fast initial load with Vite
+- Lazy loading of chapter data
+- Optimized images and assets
+- Efficient state management
+- Minimal re-renders with Svelte
 
 ---
 
@@ -284,8 +323,8 @@ This project demonstrates:
 
 - **Original Source:** [sanskrit.ie](https://www.sanskrit.ie/) for the API and design inspiration
 - **Sacred Text:** The Bhagavad Gita, ancient spiritual wisdom
+- **Design & Development:** Recreated by Rutger Kortenhorst | Burning Desire Inclusive
 - **Purpose:** Created as part of an internship evaluation to demonstrate web development skills
-- **Community:** Thanks to the Svelte and open-source communities
 
 ---
 
@@ -309,7 +348,6 @@ Potential features for future versions:
 - [ ] Commentary from various scholars
 - [ ] Verse sharing on social media
 - [ ] Reading progress tracking
-- [ ] Personalized study plans
 
 ---
 
